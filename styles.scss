@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    padding: 0;
+    margin: 0px;
+    font-family: 'aModern Script';
+}
+
+.top-nav{
+    background-color: white;
+
+    overflow: hidden;
+}
+
+.top-nav a{
+    color: black;
+    display: block;
+    padding: 14px 16px;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+}
+
+.active{
+    background-color: white; 
+}
+
+.top-nav a:hover:not(.active){
+    background-color: grey;
+}
+
+.right{
+    float: right !important;
+}
