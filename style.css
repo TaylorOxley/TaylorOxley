@@ -13,15 +13,12 @@ body{
 }
 
 .top-nav a{
-    
     color: black;
     display: block;
     padding: 14px 16px;
     float: left;
     text-decoration: none;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: large;
 }
 
 .active{
@@ -34,19 +31,4 @@ body{
 
 .right{
     float: right !important;
-}
-
-.card{
-
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: large;
-
-}
-
-.carousel-inner{
-
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: large;
-
 }
