@@ -36,17 +36,24 @@ body{
     float: right !important;
 }
 
-.card{
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    width: 900px; /* 3 times the width of a single product card */
+  }
+  
+  .product-card {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 280px;
+  }
+  
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: large;
 
-}
 
-.carousel-inner{
 
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: large;
 
-}
+
+  
+  
