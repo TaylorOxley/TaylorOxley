@@ -1,4 +1,5 @@
-import { Component } from '@angular/router';
+import { Component } from '@angular/router ';
+HttpClientModule
 
 @Component({
   selector: 'app-footer',
