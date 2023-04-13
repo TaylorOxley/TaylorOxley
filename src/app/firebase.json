@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "/hollister",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
