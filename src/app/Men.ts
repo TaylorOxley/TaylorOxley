@@ -1,41 +1,53 @@
-import { Component } from '@angular/core';
-import { men_mock_product_list} from "./men_mock_product_list"
-import { ProductService } from "./product.service";
-import { ProductItemModel } from "./products.service"
+import { Men } from "@angular/core";
+import { men_mock_product_list } from './men_mock_product_list';
+import { db } from "../firebase";
+import { Component } from "@angular/core";
+import { CardFormComponent } from "./card-form/card-form.component";
 
-@Component({
-  selector: 'Men',
-  templateUrl: './men',
-  styleUrls: ['./men.css']
-})
-export class Men {
-  Title = 'Men';
-  Attribute = 'men';
+
+
+export class CardFormComponent {
+  img: string;
+  name: string;
+  price: string;
+
+  onSubmit() {
+    db.collection("men-product-form").add({
+      img: this.img,
+      name: this.name,
+      price: this.price,
+    });
+    this.img = "";
+    this.name = "";
+    this.price = "";
+  }
 }
 
-constructor(private, ProductService:ProductService) {
-  for (var product of men_mock_product_list) {
-    console.log(product);
-    this.products.push(product);
-    }
-  }
+
+
+
+
+
+
   
-  ngOnInit(): void{
-    this.productsService.getProduct().subscribe((data: ProductItemModel []) => {
-      console.log("Fetching products");
-      for (var product of data)
-       console.log(data);
-       this.products.push(product);
-      } 
-    });
-   }
-  }
-  function constructor(private: any, ProductService: any, ProductService1: any) {
-    throw new Error('Function not implemented.');
-  }
+ 
   
-  function ngOnInit() {
-    throw new Error('Function not implemented.');
-  }
+
+  
+
+  
+  
+  
+  
+
+  
+
+
+
+
+
+
+
+
   
   

@@ -1,0 +1,28 @@
+[debug] [2023-04-26T04:56:07.414Z] ----------------------------------------------------------------------
+[debug] [2023-04-26T04:56:07.415Z] Command:       /opt/homebrew/Cellar/node/19.4.0_1/bin/node /opt/homebrew/bin/firebase init
+[debug] [2023-04-26T04:56:07.416Z] CLI Version:   11.26.0
+[debug] [2023-04-26T04:56:07.416Z] Platform:      darwin
+[debug] [2023-04-26T04:56:07.416Z] Node Version:  v19.4.0
+[debug] [2023-04-26T04:56:07.416Z] Time:          Wed Apr 26 2023 00:56:07 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-04-26T04:56:07.416Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-26T04:56:07.417Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-04-26T04:56:07.462Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-26T04:56:07.463Z] > authorizing via signed-in user (tjo00004@mix.wvu.edu)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/tayloroxley/Hollister
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2023-04-26T04:56:07.615Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-04-26T04:56:07.616Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
