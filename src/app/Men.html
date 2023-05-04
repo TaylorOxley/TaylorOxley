@@ -138,12 +138,21 @@
   </head>
   <body>
     <div class="container">
-        <form class="men-product-form">
-        <input type="search" class="Image" placeholder="Image URL" />
-        <input type="search" class="Name" placeholder="Name" />
-        <input type="search" class="Price" placeholder="Price" />
+        <form class="men">
+          <form [formGroup]="cardForm" (ngSubmit)="onSubmit()">
+            <label for="Image">Image</label>
+            <input id="Image" type="text" formControlName="Image">
+          
+            <label for="Name">Name</label>
+            <input id="Name" type="text" formControlName="Name">
+          
+            <label for="Price">Price</label>
+            <input id="Price" type="text" formControlName="Price">
 
-          <button type="submit">Add Product</button>
+          
+            <button type="submit">Submit</button>
+          </form>
+          
 
           <script> src="firebase.js"</script>
           <script> src='Men.js'</script>
